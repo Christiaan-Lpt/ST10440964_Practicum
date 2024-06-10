@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/weather_background"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonCalculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -67,14 +67,14 @@
                     <TextView android:text="@string/Day1" />
 
                     <EditText
-                        android:id="@+id/editTextMinDay1"
+                        android:id="@+id/EditTextMinDay1"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
                         tools:ignore="Autofill,LabelFor,DuplicateSpeakableTextCheck,TextContrastCheck" />
 
                     <EditText
-                        android:id="@+id/editTextMaxDay1"
+                        android:id="@+id/EditTextMaxDay1"
                         android:hint="@string/Degrees"
                         android:importantForAutofill="no"
                         android:inputType="numberDecimal"
@@ -98,14 +98,14 @@
                     <TextView android:text="@string/Day2" />
 
                     <EditText
-                        android:id="@+id/editTextMinDay2"
+                        android:id="@+id/EditTextMinDay2"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
                         tools:ignore="Autofill,LabelFor,TextContrastCheck" />
 
                     <EditText
-                        android:id="@+id/editTextMaxDay2"
+                        android:id="@+id/EditTextMaxDay2"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
@@ -128,7 +128,7 @@
                     <TextView android:text="@string/Day3" />
 
                     <EditText
-                        android:id="@+id/editTextMinDay3"
+                        android:id="@+id/EditTextMinDay3"
                         android:hint="@string/Degrees"
                         android:importantForAutofill="no"
                         android:inputType="numberDecimal"
@@ -136,7 +136,7 @@
                         tools:ignore="LabelFor,TextContrastCheck" />
 
                     <EditText
-                        android:id="@+id/editTextMaxDay3"
+                        android:id="@+id/EditTextMaxDay3"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
@@ -158,7 +158,7 @@
                     <TextView android:text="@string/Day4" />
 
                     <EditText
-                        android:id="@+id/editTextMinDay4"
+                        android:id="@+id/EditTextMinDay4"
                         android:hint="@string/Degrees"
                         android:importantForAutofill="no"
                         android:inputType="numberDecimal"
@@ -166,7 +166,7 @@
                         tools:ignore="LabelFor,TextContrastCheck" />
 
                     <EditText
-                        android:id="@+id/editTextMaxDay4"
+                        android:id="@+id/EditTextMaxDay4"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
@@ -188,14 +188,14 @@
                     <TextView android:text="@string/Day5" />
 
                     <EditText
-                        android:id="@+id/editTextMinDay5"
+                        android:id="@+id/EditTextMinDay5"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
                         tools:ignore="Autofill,LabelFor,TextContrastCheck" />
 
                     <EditText
-                        android:id="@+id/editTextMaxDay5"
+                        android:id="@+id/EditTextMaxDay5"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
@@ -217,14 +217,14 @@
                     <TextView android:text="@string/Day6" />
 
                     <EditText
-                        android:id="@+id/editTextMinDay6"
+                        android:id="@+id/EditTextMinDay6"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
                         tools:ignore="Autofill,LabelFor,TextContrastCheck" />
 
                     <EditText
-                        android:id="@+id/editTextMaxDay6"
+                        android:id="@+id/EditTextMaxDay6"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
@@ -246,14 +246,14 @@
                     <TextView android:text="@string/Day7" />
 
                     <EditText
-                        android:id="@+id/editTextMinDay7"
+                        android:id="@+id/EditTextMinDay7"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
                         tools:ignore="Autofill,LabelFor,TextContrastCheck" />
 
                     <EditText
-                        android:id="@+id/editTextMaxDay7"
+                        android:id="@+id/EditTextMaxDay7"
                         android:hint="@string/Degrees"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
@@ -272,18 +272,18 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/buttonCalculate"
+        android:id="@+id/ButtonCalculate"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#40000000"
         android:text="@string/CalculateAvg"
-        app:layout_constraintBottom_toTopOf="@+id/textViewAverage"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewAverage"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textViewAverage"
+        android:id="@+id/TextViewAverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -296,16 +296,16 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/buttonClear"
+        android:id="@+id/ButtonClear"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginBottom="2dp"
         android:backgroundTint="#40000000"
-        android:text="@string/buttonClear"
+        android:text="@string/com.example.weatherapplication.getButtonClear"
         app:layout_constraintBottom_toTopOf="@+id/buttonDetails"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/buttonCalculate"
+        app:layout_constraintStart_toEndOf="@+id/ButtonCalculate"
         tools:ignore="TextContrastCheck" />
 
     <Button
@@ -318,7 +318,7 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonExitMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewAverage"
+        app:layout_constraintStart_toEndOf="@+id/TextViewAverage"
         tools:ignore="TextContrastCheck" />
 
     <Button

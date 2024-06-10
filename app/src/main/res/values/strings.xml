@@ -21,7 +21,7 @@
     <string name="Day7">Sunday</string>
     <string name="CalculateAvg">Calculate Average</string>
     <string name="ViewAvg">View Average</string>
-    <string name="buttonClear">Clear Data</string>
+    <string name="com.example.weatherapplication.getButtonClear">Clear Data</string>
     <string name="ViewDetails">View Details</string>
     <string name="ButtonBackMain">Back</string>
 
