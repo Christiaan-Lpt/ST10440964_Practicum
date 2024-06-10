@@ -8,26 +8,34 @@ import androidx.appcompat.app.AppCompatActivity
 
 class DetailScreen : AppCompatActivity() {
 
-    @SuppressLint("MissingInflatedId")
+    private lateinit var textViewDetails: TextView
+    private lateinit var buttonBackMain: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_view_screen)
 
-        val temperatures = intent.getStringArrayExtra("temperatures") ?: arrayOf("", "", "", "", "", "", "")
+        textViewDetails = findViewById(R.id.textViewDetails)
+        buttonBackMain = findViewById(R.id.buttonBackMain)
 
-        val detailsTextView = findViewById<TextView>(R.id.textViewDetails)
-        val details = StringBuilder()
+        val minTemps = intent.getStringArrayExtra("MIN_TEMPS")
+        val maxTemps = intent.getStringArrayExtra("MAX_TEMPS")
 
-        for (i in temperatures.indices) {
-            details.append("Day ${i + 1}:\n")
-            details.append("Temperature: ${temperatures[i]}\n")
-            details.append("Condition: TBD\n\n")  // Placeholder for additional data
+        val detailsText = StringBuilder()
+        detailsText.append("Min Temps:\n")
+        minTemps?.forEachIndexed { index, temp ->
+            detailsText.append("Day ${index + 1}: ${temp}°C\n")
+        }
+        detailsText.append("\nMax Temps:\n")
+        maxTemps?.forEachIndexed { index, temp ->
+            detailsText.append("Day ${index + 1}: ${temp}°C\n")
         }
 
-        detailsTextView.text = details.toString()
+        textViewDetails.text = detailsText.toString()
 
-        findViewById<Button>(R.id.buttonBackMain).setOnClickListener {
-            finish()
+        buttonBackMain.setOnClickListener {
+            onBackPressed()
         }
     }
 }
+
