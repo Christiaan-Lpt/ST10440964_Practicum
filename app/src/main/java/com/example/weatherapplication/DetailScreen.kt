@@ -1,6 +1,5 @@
 package com.example.weatherapplication
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -34,7 +33,6 @@ class DetailScreen : AppCompatActivity() {
         textViewDetails.text = detailsText.toString()
 
         buttonBackMain.setOnClickListener {
-            onBackPressed()
         }
     }
 }
