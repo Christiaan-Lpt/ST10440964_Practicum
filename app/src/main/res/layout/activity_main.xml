@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_background"
+    android:padding="16dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/weather_background"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:showDividers="middle"
+                android:stretchColumns="1, 2, 3"
+                tools:ignore="UselessParent">
+
+                <TableRow
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DayOfTheWeek"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/MinimumTemp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/MaximumTemp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/WeatherConditions"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView android:text="@string/Day1" />
+
+                    <EditText
+                        android:id="@+id/editTextMinDay1"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextMaxDay1"
+                        android:hint="@string/Degrees"
+                        android:importantForAutofill="no"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextCondDay1"
+                        android:hint="@string/WeatherConditions"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="LabelFor,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView android:text="@string/Day2" />
+
+                    <EditText
+                        android:id="@+id/editTextMinDay2"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextMaxDay2"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextCondDay2"
+                        android:hint="@string/WeatherConditions"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView android:text="@string/Day3" />
+
+                    <EditText
+                        android:id="@+id/editTextMinDay3"
+                        android:hint="@string/Degrees"
+                        android:importantForAutofill="no"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextMaxDay3"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextCondDay3"
+                        android:hint="@string/WeatherConditions"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView android:text="@string/Day4" />
+
+                    <EditText
+                        android:id="@+id/editTextMinDay4"
+                        android:hint="@string/Degrees"
+                        android:importantForAutofill="no"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextMaxDay4"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor" />
+
+                    <EditText
+                        android:id="@+id/editTextCondDay4"
+                        android:hint="@string/WeatherConditions"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView android:text="@string/Day5" />
+
+                    <EditText
+                        android:id="@+id/editTextMinDay5"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextMaxDay5"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextCondDay5"
+                        android:hint="@string/WeatherConditions"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView android:text="@string/Day6" />
+
+                    <EditText
+                        android:id="@+id/editTextMinDay6"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextMaxDay6"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextCondDay6"
+                        android:hint="@string/WeatherConditions"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@android:color/white"
+                    android:padding="8dp">
+
+                    <TextView android:text="@string/Day7" />
+
+                    <EditText
+                        android:id="@+id/editTextMinDay7"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextMaxDay7"
+                        android:hint="@string/Degrees"
+                        android:inputType="numberDecimal"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill,LabelFor,TextContrastCheck" />
+
+                    <EditText
+                        android:id="@+id/editTextCondDay7"
+                        android:hint="@string/WeatherConditions"
+                        android:inputType="text"
+                        tools:ignore="Autofill,LabelFor,TouchTargetSizeCheck,TextContrastCheck" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#40000000"
+        android:text="@string/CalculateAvg"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAverage"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="108dp"
+        android:background="#4D000000"
+        android:text="@string/ViewAvg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#40000000"
+        android:text="@string/buttonClear"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalculate"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonDetails"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#40000000"
+        android:text="@string/ViewDetails"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExitMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewAverage"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonExitMain"
+        android:layout_width="164dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#40000000"
+        android:text="@string/buttonExit2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

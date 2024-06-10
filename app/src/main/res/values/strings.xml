@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Your Local Weather Application</string>
+    <string name="buttonEnter">Enter</string>
+    <string name="buttonExit">Close Application</string>
+    <string name="buttonExit2">Close Application</string>
+    <string name="Degrees">C</string>
+    <string name="StudentInfo">Christiaan Viljoen ST10440964</string>
+    <string name="ImageDescription">Weather Application Logo</string>
+    <string name="MainScreenWelcome">Welcome</string>
+    <string name="MainScreenStart">Please enter your data</string>
+    <string name="MinimumTemp">Min</string>
+    <string name="MaximumTemp">Max</string>
+    <string name="DayOfTheWeek">Day</string>
+    <string name="WeatherConditions">Weather Type</string>
+    <string name="Day1">Monday</string>
+    <string name="Day2">Tuesday</string>
+    <string name="Day3">Wednesday</string>
+    <string name="Day4">Thursday</string>
+    <string name="Day5">Friday</string>
+    <string name="Day6">Saturday</string>
+    <string name="Day7">Sunday</string>
+    <string name="CalculateAvg">Calculate Average</string>
+    <string name="ViewAvg">View Average</string>
+    <string name="buttonClear">Clear Data</string>
+    <string name="ViewDetails">View Details</string>
+    <string name="ButtonBackMain">Back</string>
+
+</resources>
