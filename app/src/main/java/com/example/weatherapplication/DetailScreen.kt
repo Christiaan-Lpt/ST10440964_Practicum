@@ -33,6 +33,7 @@ class DetailScreen : AppCompatActivity() {
         textViewDetails.text = detailsText.toString()
 
         buttonBackMain.setOnClickListener {
+            finish()
         }
     }
 }
