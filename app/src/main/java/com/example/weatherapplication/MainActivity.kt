@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     // Declare EditText variables for other days as needed
 
+    //blala
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
